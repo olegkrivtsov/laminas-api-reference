@@ -1,0 +1,75 @@
+{
+    "title": "Laminas Framework API Reference",
+    "copyright": "(c) 2020 by Oleg Krivtsov",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "website": "https://olegkrivtsov.github.io/laminas-api-reference/html",
+    "keywords": [
+        "php",
+        "laminas framework",
+        "api",
+        "reference"
+    ],
+    "links": {
+        "Home": "https://olegkrivtsov.github.io/laminas-api-reference/html",
+        "GitHub": "https://github.com/olegkrivtsov/laminas-api-reference"
+    },
+    "components": [
+        "laminas/laminas-authentication",
+        "laminas/laminas-barcode",
+        "laminas/laminas-cache",
+        "laminas/laminas-captcha",
+        "laminas/laminas-code",
+        "laminas/laminas-config",
+        "laminas/laminas-console",
+        "laminas/laminas-crypt",
+        "laminas/laminas-db",
+        "laminas/laminas-dom",
+        "laminas/laminas-escaper",
+        "laminas/laminas-eventmanager",
+        "laminas/laminas-filter",
+        "laminas/laminas-form",
+        "laminas/laminas-http",
+        "laminas/laminas-hydrator",
+        "laminas/laminas-inputfilter",
+        "laminas/laminas-i18n",
+        "laminas/laminas-json",
+        "laminas/laminas-log",
+        "laminas/laminas-mail",
+        "laminas/laminas-math",
+        "laminas/laminas-modulemanager",
+        "laminas/laminas-mvc",
+        "laminas/laminas-mvc-console",
+        "laminas/laminas-mvc-i18n",
+        "laminas/laminas-mvc-plugin-fileprg",
+        "laminas/laminas-mvc-plugin-flashmessenger",
+        "laminas/laminas-mvc-plugin-identity",
+        "laminas/laminas-mvc-plugin-prg",
+        "laminas/laminas-navigation",
+        "laminas/laminas-paginator",
+        "laminas/laminas-permissions-acl",
+        "laminas/laminas-permissions-rbac",
+        "laminas/laminas-router",
+        "laminas/laminas-serializer",
+        "laminas/laminas-servicemanager",
+        "laminas/laminas-session",
+        "laminas/laminas-soap",
+        "laminas/laminas-stdlib",
+        "laminas/laminas-test",
+        "laminas/laminas-uri",
+        "laminas/laminas-validator",
+        "laminas/laminas-view",
+        "laminas/laminas-xmlrpc"
+    ],
+    "google_analytics": {
+        "enabled": true,
+        "account_id": "UA-115800598-1"
+    },
+    "google_adsence": {
+        "enabled": true, 
+        "upper_ad": "data/upper_ad.js"
+    },
+    "disqus": {
+        "enabled": false,
+        "src": "//zf3-api-reference.disqus.com/embed.js"
+    }
+}

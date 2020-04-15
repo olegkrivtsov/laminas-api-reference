@@ -1,0 +1,38 @@
+{
+    "name": "olegkrivtsov/laminas-api-reference",
+    "description": "Laminas Framework API Reference",
+    "license": "",
+    "keywords": [
+        "laminas",
+        "framework",
+        "api",
+        "reference"
+    ],
+    "homepage": "http://olegkrivtsov.github.com/laminas-api-reference/html",
+    "require": {
+        "laminas/laminas-mvc": "^3.1.1",
+        "laminas/laminas-json": "^3.1.2",
+        "laminas/laminas-mvc-console": "^1.2.0",
+        "laminas/laminas-captcha": "^2.9.0",
+        "laminas/laminas-mvc-form": "^1.0",
+        "laminas/laminas-mvc-plugins": "^1.0.1",
+        "laminas/laminas-session": "^2.9.3",
+        "laminas/laminas-test": "^3.4.1",
+        "laminas/laminas-math": "^3.2.0",
+        "laminas/laminas-crypt": "^3.3.1",
+        "laminas/laminas-serializer": "^2.9.1",
+        "laminas/laminas-log": "^2.12.0",
+        "laminas/laminas-i18n": "^2.10.3",
+        "laminas/laminas-barcode": "^2.8.2",
+        "laminas/laminas-cache": "^2.9.0",
+        "laminas/laminas-db": "^2.11.3",
+        "laminas/laminas-mail": "^2.10.0",
+        "laminas/laminas-mvc-i18n": "^1.1.1",
+        "laminas/laminas-navigation": "^2.9.1",
+        "laminas/laminas-soap": "^2.8.0",
+        "laminas/laminas-xmlrpc": "^2.9.0",
+        "laminas/laminas-paginator": "^2.8.2",
+        "laminas/laminas-permissions-acl": "^2.7.1",
+        "laminas/laminas-permissions-rbac": "^3.0.2"
+    }
+}
