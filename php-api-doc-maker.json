@@ -2,7 +2,7 @@
     "title": "Laminas Framework API Reference",
     "copyright": "(c) 2020 by Oleg Krivtsov",
     "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "website": "https://olegkrivtsov.github.io/laminas-api-reference/html",
+    "website": "https://olegkrivtsov.github.io/laminas-api-reference/html/index.html",
     "keywords": [
         "php",
         "laminas framework",
@@ -10,7 +10,7 @@
         "reference"
     ],
     "links": {
-        "Home": "https://olegkrivtsov.github.io/laminas-api-reference/html",
+        "Home": "https://olegkrivtsov.github.io/laminas-api-reference/html/index.html",
         "GitHub": "https://github.com/olegkrivtsov/laminas-api-reference"
     },
     "components": [
