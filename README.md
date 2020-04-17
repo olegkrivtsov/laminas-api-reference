@@ -2,7 +2,7 @@
 
 This project's goal is to provide a reference of Laminas Framework 
 components and their PHP classes (API). The latest published version 
-of the reference can be found on the [Laminas API Reference Website](https://olegkrivtsov.github.io/laminas-api-reference/html/). 
+of the reference can be found on the [Laminas API Reference Website](https://olegkrivtsov.github.io/laminas-api-reference/html/index.html). 
 
 This reference is integrated with my free book, [Using Laminas Framework](https://github.com/olegkrivtsov/using-Laminas-framework-book), 
 so you can take a look at it, too.
