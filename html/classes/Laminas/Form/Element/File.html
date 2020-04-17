@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Laminas Framework API Reference">
+<meta name="keywords" content="php,laminas framework,api,reference">
+<meta name="author" content="(c) 2020 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Laminas\Form\Element\File &ndash; Laminas Framework API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">Laminas Framework API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/laminas-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/laminas-api-reference">GitHub</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/laminas/laminas-form.html">laminas/laminas-form</a>
+    &rarr;        <a href="../../../../classes/Laminas/Form/Element/File.html">Class File</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        File</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Laminas\Form\Element\File        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../../classes/Laminas\Form\Element.html">Element</a>                    </td>
+    </tr>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../../../classes/Laminas\InputFilter\InputProviderInterface.html">InputProviderInterface</a>,                         <a href="../../../../classes/Laminas\Form\ElementPrepareAwareInterface.html">ElementPrepareAwareInterface</a>                    </td>
+    </tr>
+    </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearAttributes()">
+            clearAttributes()
+            </a>
+        </td>
+        <td>
+            Clear all attributes        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearLabelOptions()">
+            clearLabelOptions()
+            </a>
+        </td>
+        <td>
+            Clear all label options        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getAttribute()">
+            getAttribute()
+            </a>
+        </td>
+        <td>
+            Retrieve a single element attribute        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getAttributes()">
+            getAttributes()
+            </a>
+        </td>
+        <td>
+            Retrieve all attributes at once        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getInputSpecification()">
+            getInputSpecification()
+            </a>
+        </td>
+        <td>
+            Should return an array specification compatible with
+{@link Laminas\InputFilter\Factory::createInput()}.        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element\File.html">
+            File            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLabel()">
+            getLabel()
+            </a>
+        </td>
+        <td>
+            Retrieve the label used for this element        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLabelAttributes()">
+            getLabelAttributes()
+            </a>
+        </td>
+        <td>
+            Get the attributes to use with the label        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLabelOption()">
+            getLabelOption()
+            </a>
+        </td>
+        <td>
+            Retrieve a single label option        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLabelOptions()">
+            getLabelOptions()
+            </a>
+        </td>
+        <td>
+            Get label specific options        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMessages()">
+            getMessages()
+            </a>
+        </td>
+        <td>
+            Get validation error messages, if any.        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getName()">
+            getName()
+            </a>
+        </td>
+        <td>
+            Get value for name        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getOption()">
+            getOption()
+            </a>
+        </td>
+        <td>
+            Return the specified option        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getOptions()">
+            getOptions()
+            </a>
+        </td>
+        <td>
+            Get defined options        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getValue()">
+            getValue()
+            </a>
+        </td>
+        <td>
+            Retrieve the element value        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasAttribute()">
+            hasAttribute()
+            </a>
+        </td>
+        <td>
+            Does the element has a specific attribute ?        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasLabelOption()">
+            hasLabelOption()
+            </a>
+        </td>
+        <td>
+            Does the element has a specific label option ?        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#init()">
+            init()
+            </a>
+        </td>
+        <td>
+            This function is automatically called when creating element with factory. It
+allows to perform various operations (add elements.        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#prepareElement()">
+            prepareElement()
+            </a>
+        </td>
+        <td>
+            Prepare the form element (mostly used for rendering purposes)        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element\File.html">
+            File            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeAttribute()">
+            removeAttribute()
+            </a>
+        </td>
+        <td>
+            Remove a single attribute        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeAttributes()">
+            removeAttributes()
+            </a>
+        </td>
+        <td>
+            Remove many attributes at once        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeLabelOption()">
+            removeLabelOption()
+            </a>
+        </td>
+        <td>
+            Remove a single label option        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeLabelOptions()">
+            removeLabelOptions()
+            </a>
+        </td>
+        <td>
+            Remove many attributes at once        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setAttribute()">
+            setAttribute()
+            </a>
+        </td>
+        <td>
+            Set a single element attribute        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setAttributes()">
+            setAttributes()
+            </a>
+        </td>
+        <td>
+            Set many attributes at once        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setLabel()">
+            setLabel()
+            </a>
+        </td>
+        <td>
+            Set the label used for this element        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setLabelAttributes()">
+            setLabelAttributes()
+            </a>
+        </td>
+        <td>
+            Set the attributes to use with the label        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setLabelOption()">
+            setLabelOption()
+            </a>
+        </td>
+        <td>
+            Set a single label optionn        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setLabelOptions()">
+            setLabelOptions()
+            </a>
+        </td>
+        <td>
+            Set many label options at once        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setMessages()">
+            setMessages()
+            </a>
+        </td>
+        <td>
+            Set a list of messages to report when validation fails        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setName()">
+            setName()
+            </a>
+        </td>
+        <td>
+            Set value for name        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOption()">
+            setOption()
+            </a>
+        </td>
+        <td>
+            Set a single option for an element        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOptions()">
+            setOptions()
+            </a>
+        </td>
+        <td>
+            Set options for an element. Accepted options are:
+- label: label to associate with the element
+- label_attributes: attributes to use when the label is rendered
+- label_options: label specific options        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setValue()">
+            setValue()
+            </a>
+        </td>
+        <td>
+            Set the element value        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Element.html">
+            Element            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            null|int|string        </td>
+        <td>
+            Optional        </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+            Optional        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="clearAttributes()">clearAttributes()</h3>
+
+<p>
+Clear all attributes</p>
+
+
+
+<p>Returns: $this </p>
+
+
+<h3 id="clearLabelOptions()">clearLabelOptions()</h3>
+
+<p>
+Clear all label options</p>
+
+
+
+<p>Returns: $this </p>
+
+
+<h3 id="getAttribute()">getAttribute()</h3>
+
+<p>
+Retrieve a single element attribute</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $key        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed|null </p>
+
+
+<h3 id="getAttributes()">getAttributes()</h3>
+
+<p>
+Retrieve all attributes at once</p>
+
+
+
+<p>Returns: array|\Traversable </p>
+
+
+<h3 id="getInputSpecification()">getInputSpecification()</h3>
+
+<p>
+Should return an array specification compatible with
+{@link Laminas\InputFilter\Factory::createInput()}.</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getLabel()">getLabel()</h3>
+
+<p>
+Retrieve the label used for this element</p>
+
+
+
+<p>Returns: null|string </p>
+
+
+<h3 id="getLabelAttributes()">getLabelAttributes()</h3>
+
+<p>
+Get the attributes to use with the label</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getLabelOption()">getLabelOption()</h3>
+
+<p>
+Retrieve a single label option</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $key        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed|null </p>
+
+
+<h3 id="getLabelOptions()">getLabelOptions()</h3>
+
+<p>
+Get label specific options</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getMessages()">getMessages()</h3>
+
+<p>
+Get validation error messages, if any.</p>
+
+<p>Returns a list of validation failure messages, if any.</p>
+
+
+<p>Returns: array|\Traversable </p>
+
+
+<h3 id="getName()">getName()</h3>
+
+<p>
+Get value for name</p>
+
+
+
+<p>Returns: string|int </p>
+
+
+<h3 id="getOption()">getOption()</h3>
+
+<p>
+Return the specified option</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $option        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: null|mixed </p>
+
+
+<h3 id="getOptions()">getOptions()</h3>
+
+<p>
+Get defined options</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getValue()">getValue()</h3>
+
+<p>
+Retrieve the element value</p>
+
+
+
+<p>Returns: mixed </p>
+
+
+<h3 id="hasAttribute()">hasAttribute()</h3>
+
+<p>
+Does the element has a specific attribute ?</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="hasLabelOption()">hasLabelOption()</h3>
+
+<p>
+Does the element has a specific label option ?</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="init()">init()</h3>
+
+<p>
+This function is automatically called when creating element with factory. It
+allows to perform various operations (add elements.</p>
+
+<p>..)</p>
+
+
+<p>Returns: void </p>
+
+
+<h3 id="prepareElement()">prepareElement()</h3>
+
+<p>
+Prepare the form element (mostly used for rendering purposes)</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $form        </td>
+        <td>
+            \FormInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="removeAttribute()">removeAttribute()</h3>
+
+<p>
+Remove a single attribute</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="removeAttributes()">removeAttributes()</h3>
+
+<p>
+Remove many attributes at once</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $keys        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="removeLabelOption()">removeLabelOption()</h3>
+
+<p>
+Remove a single label option</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="removeLabelOptions()">removeLabelOptions()</h3>
+
+<p>
+Remove many attributes at once</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $keys        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setAttribute()">setAttribute()</h3>
+
+<p>
+Set a single element attribute</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setAttributes()">setAttributes()</h3>
+
+<p>
+Set many attributes at once</p>
+
+<p>Implementation will decide if this will overwrite or merge.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $arrayOrTraversable        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setLabel()">setLabel()</h3>
+
+<p>
+Set the label used for this element</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $label        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $label        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setLabelAttributes()">setLabelAttributes()</h3>
+
+<p>
+Set the attributes to use with the label</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $labelAttributes        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setLabelOption()">setLabelOption()</h3>
+
+<p>
+Set a single label optionn</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setLabelOptions()">setLabelOptions()</h3>
+
+<p>
+Set many label options at once</p>
+
+<p>Implementation will decide if this will overwrite or merge.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $arrayOrTraversable        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setMessages()">setMessages()</h3>
+
+<p>
+Set a list of messages to report when validation fails</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $messages        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setName()">setName()</h3>
+
+<p>
+Set value for name</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setOption()">setOption()</h3>
+
+<p>
+Set a single option for an element</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setOptions()">setOptions()</h3>
+
+<p>
+Set options for an element. Accepted options are:
+- label: label to associate with the element
+- label_attributes: attributes to use when the label is rendered
+- label_options: label specific options</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+<h3 id="setValue()">setValue()</h3>
+
+<p>
+Set the element value</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: $this </p>
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+<script src="../../../../assets/js/popup.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115800598-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Laminas Framework API Reference">
+<meta name="keywords" content="php,laminas framework,api,reference">
+<meta name="author" content="(c) 2020 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Laminas\Mvc\View\Http\ViewManager &ndash; Laminas Framework API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../../index.html">Laminas Framework API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/laminas-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/laminas-api-reference">GitHub</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../../components/laminas/laminas-mvc.html">laminas/laminas-mvc</a>
+    &rarr;        <a href="../../../../../classes/Laminas/Mvc/View/Http/ViewManager.html">Class ViewManager</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        ViewManager</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Laminas\Mvc\View\Http\ViewManager        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../../../classes/Laminas\EventManager\AbstractListenerAggregate.html">AbstractListenerAggregate</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Prepares the view layer    </p>
+    <p>Instantiates and configures all classes related to the view layer, including
+the renderer (and its associated resolver(s) and helper manager), the view
+object (and its associated rendering strategies), and the various MVC
+strategies and listeners.</p>
+<p>Defines and manages the following services:</p>
+<ul>
+<li>ViewHelperManager (also aliased to Laminas\View\HelperPluginManager)</li>
+<li>ViewTemplateMapResolver (also aliased to Laminas\View\Resolver\TemplateMapResolver)</li>
+<li>ViewTemplatePathStack (also aliased to Laminas\View\Resolver\TemplatePathStack)</li>
+<li>ViewResolver (also aliased to Laminas\View\Resolver\AggregateResolver and ResolverInterface)</li>
+<li>ViewRenderer (also aliased to Laminas\View\Renderer\PhpRenderer and RendererInterface)</li>
+<li>ViewPhpRendererStrategy (also aliased to Laminas\View\Strategy\PhpRendererStrategy)</li>
+<li>View (also aliased to Laminas\View\View)</li>
+<li>DefaultRenderingStrategy (also aliased to Laminas\Mvc\View\Http\DefaultRenderingStrategy)</li>
+<li>ExceptionStrategy (also aliased to Laminas\Mvc\View\Http\ExceptionStrategy)</li>
+<li>RouteNotFoundStrategy (also aliased to Laminas\Mvc\View\Http\RouteNotFoundStrategy and 404Strategy)</li>
+<li>ViewModel</li>
+</ul>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#attach()">
+            attach()
+            </a>
+        </td>
+        <td>
+            {@inheritDoc}        </td>
+        <td>
+            <a href="../../../../../classes/Laminas\Mvc\View\Http\ViewManager.html">
+            ViewManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#detach()">
+            detach()
+            </a>
+        </td>
+        <td>
+            {@inheritDoc}        </td>
+        <td>
+            <a href="../../../../../classes/Laminas\EventManager\AbstractListenerAggregate.html">
+            AbstractListenerAggregate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getView()">
+            getView()
+            </a>
+        </td>
+        <td>
+            Retrieves the View instance        </td>
+        <td>
+            <a href="../../../../../classes/Laminas\Mvc\View\Http\ViewManager.html">
+            ViewManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getViewModel()">
+            getViewModel()
+            </a>
+        </td>
+        <td>
+            Configures the MvcEvent view model to ensure it has the template injected        </td>
+        <td>
+            <a href="../../../../../classes/Laminas\Mvc\View\Http\ViewManager.html">
+            ViewManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#onBootstrap()">
+            onBootstrap()
+            </a>
+        </td>
+        <td>
+            Prepares the view layer        </td>
+        <td>
+            <a href="../../../../../classes/Laminas\Mvc\View\Http\ViewManager.html">
+            ViewManager            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="attach()">attach()</h3>
+
+<p>
+{@inheritDoc}</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $events        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $priority        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="detach()">detach()</h3>
+
+<p>
+{@inheritDoc}</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $events        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="getView()">getView()</h3>
+
+<p>
+Retrieves the View instance</p>
+
+
+
+<p>Returns: \View </p>
+
+
+<h3 id="getViewModel()">getViewModel()</h3>
+
+<p>
+Configures the MvcEvent view model to ensure it has the template injected</p>
+
+
+
+<p>Returns: \Laminas\View\Model\ModelInterface </p>
+
+
+<h3 id="onBootstrap()">onBootstrap()</h3>
+
+<p>
+Prepares the view layer</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $event        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $event        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../../assets/js/loadCSS.js"></script>
+<script src="../../../../../assets/js/popup.js"></script>
+
+<script src="../../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115800598-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Laminas Framework API Reference">
+<meta name="keywords" content="php,laminas framework,api,reference">
+<meta name="author" content="(c) 2020 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Laminas\Form\Annotation\ElementAnnotationsListener &ndash; Laminas Framework API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">Laminas Framework API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/laminas-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/laminas-api-reference">GitHub</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/laminas/laminas-form.html">laminas/laminas-form</a>
+    &rarr;        <a href="../../../../classes/Laminas/Form/Annotation/ElementAnnotationsListener.html">Class ElementAnnotationsListener</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        ElementAnnotationsListener</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Laminas\Form\Annotation\ElementAnnotationsListener        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../../classes/Laminas\Form\Annotation\AbstractAnnotationsListener.html">AbstractAnnotationsListener</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Default listeners for element annotations    </p>
+    <p>Defines and attaches a set of default listeners for element annotations
+(which are defined on object properties). These include:</p>
+<ul>
+<li>AllowEmpty</li>
+<li>Attributes</li>
+<li>ErrorMessage</li>
+<li>Filter</li>
+<li>Flags</li>
+<li>Input</li>
+<li>Hydrator</li>
+<li>Object and Instance (the latter is preferred starting in 2.4)</li>
+<li>Required</li>
+<li>Type</li>
+<li>Validator</li>
+</ul>
+<p>See the individual annotation classes for more details. The handlers registered
+work with the annotation values, as well as the element and input specification
+passed in the event object.</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#attach()">
+            attach()
+            </a>
+        </td>
+        <td>
+            {@inheritDoc}        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Annotation\ElementAnnotationsListener.html">
+            ElementAnnotationsListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#detach()">
+            detach()
+            </a>
+        </td>
+        <td>
+            {@inheritDoc}        </td>
+        <td>
+            <a href="../../../../classes/Laminas\EventManager\AbstractListenerAggregate.html">
+            AbstractListenerAggregate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#discoverFallbackName()">
+            discoverFallbackName()
+            </a>
+        </td>
+        <td>
+            Discover the fallback name via reflection        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Annotation\AbstractAnnotationsListener.html">
+            AbstractAnnotationsListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#handleAllowEmptyAnnotation()">
+            handleAllowEmptyAnnotation()
+            </a>
+        </td>
+        <td>
+            Handle the AllowEmpty annotation        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Annotation\ElementAnnotationsListener.html">
+            ElementAnnotationsListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#handleAttributesAnnotation()">
+            handleAttributesAnnotation()
+            </a>
+        </td>
+        <td>
+            Handle the Attributes annotation        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Annotation\ElementAnnotationsListener.html">
+            ElementAnnotationsListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#handleComposedObjectAnnotation()">
+            handleComposedObjectAnnotation()
+            </a>
+        </td>
+        <td>
+            Allow creating fieldsets from composed entity properties        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Annotation\ElementAnnotationsListener.html">
+            ElementAnnotationsListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#handleContinueIfEmptyAnnotation()">
+            handleContinueIfEmptyAnnotation()
+            </a>
+        </td>
+        <td>
+            Handle the ContinueIfEmpty annotation        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Annotation\ElementAnnotationsListener.html">
+            ElementAnnotationsListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#handleErrorMessageAnnotation()">
+            handleErrorMessageAnnotation()
+            </a>
+        </td>
+        <td>
+            Handle the ErrorMessage annotation        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Annotation\ElementAnnotationsListener.html">
+            ElementAnnotationsListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#handleExcludeAnnotation()">
+            handleExcludeAnnotation()
+            </a>
+        </td>
+        <td>
+            Determine if the element has been marked to exclude from the definition        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Annotation\ElementAnnotationsListener.html">
+            ElementAnnotationsListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#handleFilterAnnotation()">
+            handleFilterAnnotation()
+            </a>
+        </td>
+        <td>
+            Handle the Filter annotation        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Annotation\ElementAnnotationsListener.html">
+            ElementAnnotationsListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#handleFlagsAnnotation()">
+            handleFlagsAnnotation()
+            </a>
+        </td>
+        <td>
+            Handle the Flags annotation        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Annotation\ElementAnnotationsListener.html">
+            ElementAnnotationsListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#handleHydratorAnnotation()">
+            handleHydratorAnnotation()
+            </a>
+        </td>
+        <td>
+            Handle the Hydrator annotation        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Annotation\ElementAnnotationsListener.html">
+            ElementAnnotationsListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#handleInputAnnotation()">
+            handleInputAnnotation()
+            </a>
+        </td>
+        <td>
+            Handle the Input annotation        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Annotation\ElementAnnotationsListener.html">
+            ElementAnnotationsListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#handleNameAnnotation()">
+            handleNameAnnotation()
+            </a>
+        </td>
+        <td>
+            Attempt to discover a name set via annotation        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Annotation\AbstractAnnotationsListener.html">
+            AbstractAnnotationsListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#handleObjectAnnotation()">
+            handleObjectAnnotation()
+            </a>
+        </td>
+        <td>
+            Handle the Object and Instance annotations        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Annotation\ElementAnnotationsListener.html">
+            ElementAnnotationsListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#handleOptionsAnnotation()">
+            handleOptionsAnnotation()
+            </a>
+        </td>
+        <td>
+            Handle the Options annotation        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Annotation\ElementAnnotationsListener.html">
+            ElementAnnotationsListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#handleRequiredAnnotation()">
+            handleRequiredAnnotation()
+            </a>
+        </td>
+        <td>
+            Handle the Required annotation        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Annotation\ElementAnnotationsListener.html">
+            ElementAnnotationsListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#handleTypeAnnotation()">
+            handleTypeAnnotation()
+            </a>
+        </td>
+        <td>
+            Handle the Type annotation        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Annotation\ElementAnnotationsListener.html">
+            ElementAnnotationsListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#handleValidatorAnnotation()">
+            handleValidatorAnnotation()
+            </a>
+        </td>
+        <td>
+            Handle the Validator annotation        </td>
+        <td>
+            <a href="../../../../classes/Laminas\Form\Annotation\ElementAnnotationsListener.html">
+            ElementAnnotationsListener            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="attach()">attach()</h3>
+
+<p>
+{@inheritDoc}</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $events        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $priority        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="detach()">detach()</h3>
+
+<p>
+{@inheritDoc}</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $events        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="discoverFallbackName()">discoverFallbackName()</h3>
+
+<p>
+Discover the fallback name via reflection</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \EventInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="handleAllowEmptyAnnotation()">handleAllowEmptyAnnotation()</h3>
+
+<p>
+Handle the AllowEmpty annotation</p>
+
+<p>Sets the allow_empty flag on the input specification array.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \EventInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="handleAttributesAnnotation()">handleAttributesAnnotation()</h3>
+
+<p>
+Handle the Attributes annotation</p>
+
+<p>Sets the attributes array of the element specification.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \EventInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="handleComposedObjectAnnotation()">handleComposedObjectAnnotation()</h3>
+
+<p>
+Allow creating fieldsets from composed entity properties</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \EventInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="handleContinueIfEmptyAnnotation()">handleContinueIfEmptyAnnotation()</h3>
+
+<p>
+Handle the ContinueIfEmpty annotation</p>
+
+<p>Sets the continue_if_empty flag on the input specification array.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \EventInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="handleErrorMessageAnnotation()">handleErrorMessageAnnotation()</h3>
+
+<p>
+Handle the ErrorMessage annotation</p>
+
+<p>Sets the error_message of the input specification.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \EventInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="handleExcludeAnnotation()">handleExcludeAnnotation()</h3>
+
+<p>
+Determine if the element has been marked to exclude from the definition</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \EventInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="handleFilterAnnotation()">handleFilterAnnotation()</h3>
+
+<p>
+Handle the Filter annotation</p>
+
+<p>Adds a filter to the filter chain specification for the input.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \EventInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="handleFlagsAnnotation()">handleFlagsAnnotation()</h3>
+
+<p>
+Handle the Flags annotation</p>
+
+<p>Sets the element flags in the specification (used typically for setting
+priority).</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \EventInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="handleHydratorAnnotation()">handleHydratorAnnotation()</h3>
+
+<p>
+Handle the Hydrator annotation</p>
+
+<p>Sets the hydrator class to use in the fieldset specification.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \EventInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="handleInputAnnotation()">handleInputAnnotation()</h3>
+
+<p>
+Handle the Input annotation</p>
+
+<p>Sets the filter specification for the current element to the specified
+input class name.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \EventInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="handleNameAnnotation()">handleNameAnnotation()</h3>
+
+<p>
+Attempt to discover a name set via annotation</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \EventInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool|string </p>
+
+
+<h3 id="handleObjectAnnotation()">handleObjectAnnotation()</h3>
+
+<p>
+Handle the Object and Instance annotations</p>
+
+<p>Sets the object to bind to the form or fieldset</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \EventInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="handleOptionsAnnotation()">handleOptionsAnnotation()</h3>
+
+<p>
+Handle the Options annotation</p>
+
+<p>Sets the element options in the specification.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \EventInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="handleRequiredAnnotation()">handleRequiredAnnotation()</h3>
+
+<p>
+Handle the Required annotation</p>
+
+<p>Sets the required flag on the input based on the annotation value.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \EventInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="handleTypeAnnotation()">handleTypeAnnotation()</h3>
+
+<p>
+Handle the Type annotation</p>
+
+<p>Sets the element class type to use in the element specification.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \EventInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="handleValidatorAnnotation()">handleValidatorAnnotation()</h3>
+
+<p>
+Handle the Validator annotation</p>
+
+<p>Adds a validator to the validator chain of the input specification.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \EventInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2020 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+<script src="../../../../assets/js/popup.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115800598-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+
